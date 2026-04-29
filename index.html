@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cloud DevOps Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { margin-bottom: 10px; }
+        .badge {
+            display: inline-block;
+            background: #24292e;
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👋 Hello, Cloud!</h1>
+        <h2>Ashfaque's First DevOps Project</h2>
+        <p>Deployed on AWS EC2 • Learning Cloud & DevOps</p>
+        
+        <div style="margin-top: 30px;">
+            <span class="badge">☁️ AWS</span>
+            <span class="badge">🐧 Linux</span>
+            <span class="badge">🔄 CI/CD</span>
+            <span class="badge">🐳 Docker (next!)</span>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 12px; opacity: 0.8;">
+            Built as part of Cloud DevOps Internship preparation<br>
+            Date: <span id="date"></span>
+        </p>
+    </div>
+    
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
